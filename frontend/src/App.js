@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className='text-center'>
-      <h2>Nosos serviços!</h2>
+      <h2>Nossos serviços!</h2>
       <Palindromo />
       <Currency />
       <Carro/>
