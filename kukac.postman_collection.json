@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "693a3038-d779-40e7-b150-14ac1607a6f5",
+		"name": "kukac",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PostCep array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cep\" : [\"04052030\", \"04052030\", \"04052030\", \"04052030\", \"04052\"]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/cep/body",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"cep",
+						"body"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Palindromo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arg1\" : 10, \r\n    \"arg2\" : 3113\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/palindromo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"palindromo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arg1\" : \"512\", \r\n    \"arg2\" : \"500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"modelo\" : \"Modelo\", \r\n\"ano\": \"1985\",\r\n\"marca\": \"Marca\",\r\n\"qPortas\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/carro/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"carro",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"modelo\" : \"Modelo\", \r\n\"ano\": \"1985\",\r\n\"marca\": \"Marca\",\r\n\"qPassageiros\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/moto/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"moto",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/carro/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"carro",
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/moto/motos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"moto",
+						"motos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
